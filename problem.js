@@ -79,7 +79,7 @@ const cars = [
 ];
 
 const sortingTheCars = (sortedArray) => {
-  return sortedArray.sort((a, b) => b.year - a.year);
+  return sortedArray.sort((a, b) => a.year - b.year);
 };
 const result4 = sortingTheCars(cars);
 // console.log(result4);
@@ -121,6 +121,10 @@ const finalResult = numbers.reduce((total, current) => {
 }, 0);
 // console.log(finalResult);
 
+// 7. Task: Leap Year Checker
+// -Write a function that determines whether a given year is a leap year.
+
+// Example: Happy New Year
 const checkLeapYear = (year) => {
   if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
     return `${year} is a leap year`;
@@ -128,4 +132,4 @@ const checkLeapYear = (year) => {
     return `${year} is not a leap year`;
   }
 };
-console.log(checkLeapYear(2026));
+// console.log(checkLeapYear(2026));
